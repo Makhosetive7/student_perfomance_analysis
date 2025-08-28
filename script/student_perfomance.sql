@@ -8,19 +8,19 @@ DROP TABLE IF EXISTS student_performance;
 CREATE TABLE student_performance (
     StudentID INT PRIMARY KEY,
     Age INT,
-    Gender TINYINT,              -- 0 = Female, 1 = Male
-    Ethnicity TINYINT,           -- categorical encoding
-    ParentalEducation TINYINT,   -- e.g., 0=None, 1=HS, 2=College, 3=Bachelor, 4=Graduate
-    StudyTimeWeekly INT,         -- study time in hours per week
-    Absences INT,                -- number of absences
-    Tutoring TINYINT,            -- 0 = No, 1 = Yes
-    ParentalSupport TINYINT,     -- 0=None, 1=Low, 2=Medium, 3=High, 4=Very High
-    Extracurricular TINYINT,     -- 0=No, 1=Yes
-    Sports TINYINT,              -- 0=No, 1=Yes
-    Music TINYINT,               -- 0=No, 1=Yes
-    Volunteering TINYINT,        -- 0=No, 1=Yes
-    GPA FLOAT,                   -- GPA score
-    GradeClass TINYINT           -- encoded grade class
+    Gender TINYINT,        
+    Ethnicity TINYINT,         
+    ParentalEducation TINYINT,
+    StudyTimeWeekly INT,     
+    Absences INT,            
+    Tutoring TINYINT,          
+    ParentalSupport TINYINT,   
+    Extracurricular TINYINT, 
+    Sports TINYINT,          
+    Music TINYINT,             
+    Volunteering TINYINT,       
+    GPA FLOAT,                   
+    GradeClass TINYINT           
 );
 
 -- load CSV data into the table
